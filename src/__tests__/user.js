@@ -1,7 +1,7 @@
 import loadUser from '../loadUser';
 import httpGet from '../http';
 
-jest.mock('../src/js/http'); // этот файл будет заглушка-мок
+jest.mock('../http');// этот файл будет заглушка
 beforeEach(() => { // стандартная функция, которая есть в каждом тесте
   // и она выполняется каждый раз когда у нас запускается тот или иной тест
   jest.resetAllMocks(); // сбрасываем все моки
